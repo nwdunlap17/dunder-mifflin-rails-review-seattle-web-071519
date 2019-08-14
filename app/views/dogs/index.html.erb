@@ -1,4 +1,7 @@
 <h1>Dogs!</h1>
 <% @dogs.each do |dog| %>
-    <%= link_to dog.name, dog_path(dog) %><br>
+    <%= link_to dog.name, dog_path(dog) %>
+    <%= dog.employees.length%><br>
 <% end %>
+
+<%=button_to "Sort Dogs", action: 'sorted_index'%>

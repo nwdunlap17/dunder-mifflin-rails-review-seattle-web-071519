@@ -1,0 +1,8 @@
+<h1><%="#{@ee.first_name} \"#{@ee.alias}\" #{@ee.last_name}"%></h1>
+
+<img src=<%=@ee.img_url%> alt='picture here'>
+
+<h2><%=@ee.title%></h2>
+<h2><%=@ee.office%></h2>
+
+<h3>Dog: <%=link_to @ee.here_boy,dog_path(@ee.dog)%></h3>
